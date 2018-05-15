@@ -1,0 +1,914 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>枪球巡检-蓝脑找图</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <link href="resources/css/jquery-ui-themes.css" type="text/css" rel="stylesheet"/>
+    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
+    <link href="data/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="files/枪球巡检-蓝脑找图/styles.css" type="text/css" rel="stylesheet"/>
+    <script src="resources/scripts/jquery-1.7.1.min.js"></script>
+    <script src="resources/scripts/jquery-ui-1.8.10.custom.min.js"></script>
+    <script src="resources/scripts/prototypePre.js"></script>
+    <script src="data/document.js"></script>
+    <script src="resources/scripts/prototypePost.js"></script>
+    <script src="files/枪球巡检-蓝脑找图/data.js"></script>
+    <script type="text/javascript">
+      $axure.utils.getTransparentGifPath = function() { return 'resources/images/transparent.gif'; };
+      $axure.utils.getOtherPath = function() { return 'resources/Other.html'; };
+      $axure.utils.getReloadPath = function() { return 'resources/reload.html'; };
+    </script>
+  </head>
+  <body>
+    <div id="base" class="">
+
+      <!-- Banner (组合) -->
+      <div id="u253" class="ax_default" data-label="Banner" data-left="0" data-top="0" data-width="1350" data-height="80">
+
+        <!-- Unnamed (矩形) -->
+        <div id="u254" class="ax_default box_2">
+          <div id="u254_div" class=""></div>
+        </div>
+
+        <!-- Unnamed (图片) -->
+        <div id="u255" class="ax_default _图片">
+          <img id="u255_img" class="img " src="images/任务处理/u2.png"/>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u256" class="ax_default _三级标题">
+          <div id="u256_div" class=""></div>
+          <div id="u256_text" class="text ">
+            <p><span>智慧泊车监管平台</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (图片) -->
+        <div id="u257" class="ax_default _图片">
+          <img id="u257_img" class="img " src="images/任务处理/u4.png"/>
+        </div>
+
+        <!-- Unnamed (图片) -->
+        <div id="u258" class="ax_default _图片">
+          <img id="u258_img" class="img " src="images/任务处理/u5.png"/>
+        </div>
+
+        <!-- Unnamed (图片) -->
+        <div id="u259" class="ax_default _图片">
+          <img id="u259_img" class="img " src="images/任务处理/u6.png"/>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u260" class="ax_default label">
+          <div id="u260_div" class=""></div>
+          <div id="u260_text" class="text ">
+            <p><span>车场巡检</span></p>
+          </div>
+        </div>
+
+        <!-- 账号 (组合) -->
+        <div id="u261" class="ax_default" data-label="账号" data-left="1221" data-top="33" data-width="88" data-height="19">
+
+          <!-- Unnamed (组合) -->
+          <div id="u262" class="ax_default" data-left="1221" data-top="33" data-width="22" data-height="19">
+
+            <!-- Unnamed (椭圆形) -->
+            <div id="u263" class="ax_default ellipse">
+              <img id="u263_img" class="img " src="images/任务处理/u10.png"/>
+            </div>
+
+            <!-- Unnamed (矩形) -->
+            <div id="u264" class="ax_default box_1">
+              <div id="u264_div" class=""></div>
+            </div>
+          </div>
+
+          <!-- Unnamed (矩形) -->
+          <div id="u265" class="ax_default _文本段落">
+            <div id="u265_div" class=""></div>
+            <div id="u265_text" class="text ">
+              <p><span>admin </span></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (三角形) -->
+          <div id="u266" class="ax_default box_1">
+            <img id="u266_img" class="img " src="images/任务处理/u13.png"/>
+          </div>
+        </div>
+      </div>
+
+      <!-- 备注 (矩形) -->
+      <div id="u267" class="ax_default _文本段落" data-label="备注">
+        <div id="u267_div" class=""></div>
+        <div id="u267_text" class="text ">
+          <p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';color:#FF0000;">巡检重构</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">枪球巡检：包括枪球设备的人工巡检</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">自研巡检：包括平行多枪、中位、垂停设备的人工巡检，并通过好坏泊位减少单个车场的巡检工作量，页面上展示泊位特写缩略图</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">报警巡检：巡检页面不区分枪球设备、自研设备，处理报警信号中需要区分设备报警（自研）或蓝脑报警（枪球）</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';color:#FF3300;"><br></span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';color:#FF3300;">巡检自动找图路径：</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">人工巡检</span><span style="font-family:'ArialMT', 'Arial';">-</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">处理</span><span style="font-family:'ArialMT', 'Arial';">-</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">照片回溯（全景），此项服务在巡检中添加入场、添加出场中都需要应用。</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';"><br></span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';color:#FF3300;">增加快速切换按钮：</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">1.选取区域，触发区域取图选取框，用于提供蓝脑服务的变化区域</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">2.上一次变化-快速切换上一张差分图片的位置</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">3.下一次变化-快速切换下一次差分图片的位置</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';"><br></span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';color:#FF0000;">蓝脑找图</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">1.选取区域，触发区域取图选取框，用于提供蓝脑服务的变化区域，未选取区域不能进行上一次变化、下一次变化的查找。</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">2.上一次变化可以多次点击并加载上一次变化，无上一次变化时提示【车位情况无更多变化】，且以蓝脑的时间更新当前的时间，即蓝脑时间继续向前查找变化。</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">3.当前时间点不具备后续变化照片时提示【车位情况无更多变化】</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">4.避免多次请求蓝脑服务，一次请求后，返回结果后才可进行下一次请求</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">5.在取得蓝脑服务的变化图片时，以当前显示图片时间可手动点击向前或向后取图片。</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (水平线) -->
+      <div id="u268" class="ax_default line">
+        <img id="u268_img" class="img " src="images/任务处理/u15.png"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u269" class="ax_default primary_button">
+        <div id="u269_div" class=""></div>
+        <div id="u269_text" class="text ">
+          <p><span>枪球巡检</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u270" class="ax_default primary_button">
+        <div id="u270_div" class=""></div>
+        <div id="u270_text" class="text ">
+          <p><span>报警巡检</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (表格) -->
+      <div id="u271" class="ax_default">
+
+        <!-- Unnamed (单元格) -->
+        <div id="u272" class="ax_default">
+          <img id="u272_img" class="img " src="images/枪球巡检-蓝脑找图/u272.png"/>
+          <div id="u272_text" class="text ">
+            <p><span>全景照片</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (单元格) -->
+        <div id="u273" class="ax_default">
+          <img id="u273_img" class="img " src="images/枪球巡检-蓝脑找图/u273.png"/>
+          <div id="u273_text" class="text ">
+            <p><span>泊位号</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (单元格) -->
+        <div id="u274" class="ax_default">
+          <img id="u274_img" class="img " src="images/枪球巡检-蓝脑找图/u274.png"/>
+          <div id="u274_text" class="text ">
+            <p><span>车牌</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (单元格) -->
+        <div id="u275" class="ax_default">
+          <img id="u275_img" class="img " src="images/枪球巡检-蓝脑找图/u275.png"/>
+          <div id="u275_text" class="text ">
+            <p><span>操作</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (单元格) -->
+        <div id="u276" class="ax_default table_cell">
+          <img id="u276_img" class="img " src="images/枪球巡检-蓝脑找图/u276.png"/>
+        </div>
+
+        <!-- Unnamed (单元格) -->
+        <div id="u277" class="ax_default">
+          <img id="u277_img" class="img " src="images/枪球巡检-蓝脑找图/u277.png"/>
+          <div id="u277_text" class="text ">
+            <p><span>403620</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (单元格) -->
+        <div id="u278" class="ax_default">
+          <img id="u278_img" class="img " src="images/枪球巡检-蓝脑找图/u278.png"/>
+        </div>
+
+        <!-- Unnamed (单元格) -->
+        <div id="u279" class="ax_default">
+          <img id="u279_img" class="img " src="images/枪球巡检-蓝脑找图/u279.png"/>
+          <div id="u279_text" class="text ">
+            <p><span>处理</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (单元格) -->
+        <div id="u280" class="ax_default table_cell">
+          <img id="u280_img" class="img " src="images/枪球巡检-蓝脑找图/u280.png"/>
+        </div>
+
+        <!-- Unnamed (单元格) -->
+        <div id="u281" class="ax_default">
+          <img id="u281_img" class="img " src="images/枪球巡检-蓝脑找图/u281.png"/>
+          <div id="u281_text" class="text ">
+            <p><span>403619</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (单元格) -->
+        <div id="u282" class="ax_default">
+          <img id="u282_img" class="img " src="images/枪球巡检-蓝脑找图/u282.png"/>
+        </div>
+
+        <!-- Unnamed (单元格) -->
+        <div id="u283" class="ax_default">
+          <img id="u283_img" class="img " src="images/枪球巡检-蓝脑找图/u283.png"/>
+          <div id="u283_text" class="text ">
+            <p><span>查看</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (单元格) -->
+        <div id="u284" class="ax_default table_cell">
+          <img id="u284_img" class="img " src="images/枪球巡检-蓝脑找图/u284.png"/>
+        </div>
+
+        <!-- Unnamed (单元格) -->
+        <div id="u285" class="ax_default">
+          <img id="u285_img" class="img " src="images/枪球巡检-蓝脑找图/u285.png"/>
+          <div id="u285_text" class="text ">
+            <p><span>403618</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (单元格) -->
+        <div id="u286" class="ax_default">
+          <img id="u286_img" class="img " src="images/枪球巡检-蓝脑找图/u286.png"/>
+        </div>
+
+        <!-- Unnamed (单元格) -->
+        <div id="u287" class="ax_default">
+          <img id="u287_img" class="img " src="images/枪球巡检-蓝脑找图/u287.png"/>
+          <div id="u287_text" class="text ">
+            <p><span>处理</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (单元格) -->
+        <div id="u288" class="ax_default table_cell">
+          <img id="u288_img" class="img " src="images/枪球巡检-蓝脑找图/u288.png"/>
+        </div>
+
+        <!-- Unnamed (单元格) -->
+        <div id="u289" class="ax_default">
+          <img id="u289_img" class="img " src="images/枪球巡检-蓝脑找图/u289.png"/>
+          <div id="u289_text" class="text ">
+            <p><span>403617</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (单元格) -->
+        <div id="u290" class="ax_default">
+          <img id="u290_img" class="img " src="images/枪球巡检-蓝脑找图/u290.png"/>
+        </div>
+
+        <!-- Unnamed (单元格) -->
+        <div id="u291" class="ax_default">
+          <img id="u291_img" class="img " src="images/枪球巡检-蓝脑找图/u291.png"/>
+          <div id="u291_text" class="text ">
+            <p><span>处理</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (单元格) -->
+        <div id="u292" class="ax_default table_cell">
+          <img id="u292_img" class="img " src="images/枪球巡检-蓝脑找图/u292.png"/>
+        </div>
+
+        <!-- Unnamed (单元格) -->
+        <div id="u293" class="ax_default">
+          <img id="u293_img" class="img " src="images/枪球巡检-蓝脑找图/u293.png"/>
+          <div id="u293_text" class="text ">
+            <p><span>403616</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (单元格) -->
+        <div id="u294" class="ax_default">
+          <img id="u294_img" class="img " src="images/枪球巡检-蓝脑找图/u294.png"/>
+        </div>
+
+        <!-- Unnamed (单元格) -->
+        <div id="u295" class="ax_default">
+          <img id="u295_img" class="img " src="images/枪球巡检-蓝脑找图/u295.png"/>
+          <div id="u295_text" class="text ">
+            <p><span>查看</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (单元格) -->
+        <div id="u296" class="ax_default table_cell">
+          <img id="u296_img" class="img " src="images/枪球巡检-蓝脑找图/u296.png"/>
+        </div>
+
+        <!-- Unnamed (单元格) -->
+        <div id="u297" class="ax_default">
+          <img id="u297_img" class="img " src="images/枪球巡检-蓝脑找图/u297.png"/>
+          <div id="u297_text" class="text ">
+            <p><span>403615</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (单元格) -->
+        <div id="u298" class="ax_default">
+          <img id="u298_img" class="img " src="images/枪球巡检-蓝脑找图/u298.png"/>
+        </div>
+
+        <!-- Unnamed (单元格) -->
+        <div id="u299" class="ax_default">
+          <img id="u299_img" class="img " src="images/枪球巡检-蓝脑找图/u299.png"/>
+          <div id="u299_text" class="text ">
+            <p><span>处理</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u300" class="ax_default _图片">
+        <img id="u300_img" class="img " src="images/枪球巡检-蓝脑找图/u300.jpg"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u301" class="ax_default primary_button">
+        <div id="u301_div" class=""></div>
+        <div id="u301_text" class="text ">
+          <p><span>京A23451 冀AJ193S</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u302" class="ax_default primary_button">
+        <div id="u302_div" class=""></div>
+        <div id="u302_text" class="text ">
+          <p><span>京A54233</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u303" class="ax_default button">
+        <div id="u303_div" class=""></div>
+        <div id="u303_text" class="text ">
+          <p><span>无</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u304" class="ax_default button">
+        <div id="u304_div" class=""></div>
+        <div id="u304_text" class="text ">
+          <p><span>无</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u305" class="ax_default primary_button">
+        <div id="u305_div" class=""></div>
+        <div id="u305_text" class="text ">
+          <p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">冀</span><span style="font-family:'ArialMT', 'Arial';">AMW976</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u306" class="ax_default button">
+        <div id="u306_div" class=""></div>
+        <div id="u306_text" class="text ">
+          <p><span>无</span></p>
+        </div>
+      </div>
+
+      <!-- 人工巡检 (组合) -->
+      <div id="u307" class="ax_default" data-label="人工巡检" data-left="10" data-top="134" data-width="1331" data-height="47">
+
+        <!-- Unnamed (矩形) -->
+        <div id="u308" class="ax_default box_2">
+          <div id="u308_div" class=""></div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u309" class="ax_default label">
+          <div id="u309_div" class=""></div>
+          <div id="u309_text" class="text ">
+            <p><span>停车场名称：</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (文本框) -->
+        <div id="u310" class="ax_default text_field">
+          <input id="u310_input" type="text" value="富强电力小区西门"/>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u311" class="ax_default primary_button">
+          <div id="u311_div" class=""></div>
+          <div id="u311_text" class="text ">
+            <p><span>搜索</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u312" class="ax_default label">
+          <div id="u312_div" class=""></div>
+          <div id="u312_text" class="text ">
+            <p><span>数据来源：</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (下拉列表框) -->
+        <div id="u313" class="ax_default droplist">
+          <select id="u313_input">
+            <option selected value="富强电力小区西门球机1">富强电力小区西门球机1</option>
+            <option value="富强电力小区西门球机2">富强电力小区西门球机2</option>
+            <option value="富强电力小区西门球机3">富强电力小区西门球机3</option>
+            <option value="富强电力小区西门球机4">富强电力小区西门球机4</option>
+            <option value="富强电力小区西门球机5">富强电力小区西门球机5</option>
+          </select>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u314" class="ax_default primary_button">
+          <div id="u314_div" class=""></div>
+          <div id="u314_text" class="text ">
+            <p><span>上一杆位</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u315" class="ax_default primary_button">
+          <div id="u315_div" class=""></div>
+          <div id="u315_text" class="text ">
+            <p><span>下一杆位</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 自动找图 (动态面板) -->
+      <div id="u316" class="ax_default ax_default_hidden" data-label="自动找图" style="display:none; visibility: hidden">
+        <div id="u316_state0" class="panel_state" data-label="State1" style="">
+          <div id="u316_state0_content" class="panel_state_content">
+
+            <!-- Unnamed (矩形) -->
+            <div id="u317" class="ax_default box_2">
+              <div id="u317_div" class=""></div>
+            </div>
+
+            <!-- Unnamed (矩形) -->
+            <div id="u318" class="ax_default iconfont">
+              <img id="u318_img" class="img " src="images/任务处理/u112.png"/>
+              <div id="u318_text" class="text ">
+                <p><span></span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (矩形) -->
+            <div id="u319" class="ax_default label">
+              <div id="u319_div" class=""></div>
+              <div id="u319_text" class="text ">
+                <p><span>新增记录</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (矩形) -->
+            <div id="u320" class="ax_default box_2">
+              <div id="u320_div" class=""></div>
+            </div>
+
+            <!-- 车辆信息 (组合) -->
+            <div id="u321" class="ax_default" data-label="车辆信息" data-left="370" data-top="372" data-width="327" data-height="292">
+
+              <!-- Unnamed (矩形) -->
+              <div id="u322" class="ax_default box_2">
+                <div id="u322_div" class=""></div>
+              </div>
+
+              <!-- Unnamed (矩形) -->
+              <div id="u323" class="ax_default primary_button">
+                <div id="u323_div" class=""></div>
+                <div id="u323_text" class="text ">
+                  <p><span>泊位号</span></p>
+                </div>
+              </div>
+
+              <!-- Unnamed (下拉列表框) -->
+              <div id="u324" class="ax_default droplist">
+                <select id="u324_input">
+                  <option selected value="100009">100009</option>
+                  <option value="100010">100010</option>
+                  <option value="100011">100011</option>
+                </select>
+              </div>
+
+              <!-- Unnamed (矩形) -->
+              <div id="u325" class="ax_default primary_button">
+                <div id="u325_div" class=""></div>
+                <div id="u325_text" class="text ">
+                  <p><span>取消</span></p>
+                </div>
+              </div>
+
+              <!-- Unnamed (矩形) -->
+              <div id="u326" class="ax_default primary_button">
+                <div id="u326_div" class=""></div>
+                <div id="u326_text" class="text ">
+                  <p><span>确认</span></p>
+                </div>
+              </div>
+
+              <!-- Unnamed (文本框) -->
+              <div id="u327" class="ax_default text_field">
+                <input id="u327_input" type="text" value=""/>
+              </div>
+
+              <!-- Unnamed (矩形) -->
+              <div id="u328" class="ax_default primary_button">
+                <div id="u328_div" class=""></div>
+                <div id="u328_text" class="text ">
+                  <p><span>车牌号</span></p>
+                </div>
+              </div>
+
+              <!-- Unnamed (矩形) -->
+              <div id="u329" class="ax_default primary_button">
+                <div id="u329_div" class=""></div>
+                <div id="u329_text" class="text ">
+                  <p><span>出入场类型</span></p>
+                </div>
+              </div>
+
+              <!-- Unnamed (矩形) -->
+              <div id="u330" class="ax_default box_1 disabled">
+                <div id="u330_div" class="disabled"></div>
+              </div>
+
+              <!-- Unnamed (单选按钮) -->
+              <div id="u331" class="ax_default radio_button">
+                <label for="u331_input" style="position: absolute; left: 0px;">
+                  <div id="u331_text" class="text ">
+                    <p><span>入场</span></p>
+                  </div>
+                </label>
+                <input id="u331_input" type="radio" value="radio" name="出入场切换" checked/>
+              </div>
+
+              <!-- Unnamed (单选按钮) -->
+              <div id="u332" class="ax_default radio_button">
+                <label for="u332_input" style="position: absolute; left: 0px;">
+                  <div id="u332_text" class="text ">
+                    <p><span>出场</span></p>
+                  </div>
+                </label>
+                <input id="u332_input" type="radio" value="radio" name="出入场切换"/>
+              </div>
+
+              <!-- Unnamed (图片) -->
+              <div id="u333" class="ax_default _图片">
+                <img id="u333_img" class="img " src="images/任务处理/u137.png"/>
+              </div>
+
+              <!-- Unnamed (矩形) -->
+              <div id="u334" class="ax_default primary_button">
+                <div id="u334_div" class=""></div>
+                <div id="u334_text" class="text ">
+                  <p><span>出入场时间</span></p>
+                </div>
+              </div>
+
+              <!-- Unnamed (文本框) -->
+              <div id="u335" class="ax_default text_field">
+                <input id="u335_input" type="text" value="2018-02-16 17:00:44"/>
+              </div>
+
+              <!-- Unnamed (文本框) -->
+              <div id="u336" class="ax_default text_field">
+                <input id="u336_input" type="text" value="富强电力小区西门" disabled/>
+              </div>
+
+              <!-- Unnamed (矩形) -->
+              <div id="u337" class="ax_default primary_button">
+                <div id="u337_div" class=""></div>
+                <div id="u337_text" class="text ">
+                  <p><span>停车场名称</span></p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Unnamed (图片) -->
+            <div id="u338" class="ax_default _图片">
+              <img id="u338_img" class="img " src="images/枪球巡检-蓝脑找图/u338.png"/>
+            </div>
+
+            <!-- 回溯时间插件 (组合) -->
+            <div id="u339" class="ax_default" data-label="回溯时间插件" data-left="193" data-top="60" data-width="151" data-height="26">
+
+              <!-- Unnamed (文本框) -->
+              <div id="u340" class="ax_default text_field">
+                <input id="u340_input" type="text" value="2018-03-21 08:29:17"/>
+              </div>
+
+              <!-- Unnamed (图片) -->
+              <div id="u341" class="ax_default _图片">
+                <img id="u341_img" class="img " src="images/垂停自动化/u225.png"/>
+              </div>
+            </div>
+
+            <!-- Unnamed (图片) -->
+            <div id="u342" class="ax_default _图片">
+              <img id="u342_img" class="img " src="images/枪球巡检-蓝脑找图/u342.png"/>
+            </div>
+
+            <!-- Unnamed (矩形) -->
+            <div id="u343" class="ax_default primary_button">
+              <div id="u343_div" class=""></div>
+              <div id="u343_text" class="text ">
+                <p><span>上一次变化</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (矩形) -->
+            <div id="u344" class="ax_default primary_button">
+              <div id="u344_div" class=""></div>
+              <div id="u344_text" class="text ">
+                <p><span>下一次变化</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (矩形) -->
+            <div id="u345" class="ax_default primary_button">
+              <div id="u345_div" class=""></div>
+              <div id="u345_text" class="text ">
+                <p><span>选取区域</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (动态面板) -->
+            <div id="u346" class="ax_default">
+              <div id="u346_state0" class="panel_state" data-label="State1" style="">
+                <div id="u346_state0_content" class="panel_state_content">
+
+                  <!-- Unnamed (图片) -->
+                  <div id="u347" class="ax_default _图片">
+                    <img id="u347_img" class="img " src="images/枪球巡检-蓝脑找图/u347.jpg"/>
+                  </div>
+                </div>
+              </div>
+              <div id="u346_state1" class="panel_state" data-label="State2" style="visibility: hidden;">
+                <div id="u346_state1_content" class="panel_state_content">
+
+                  <!-- Unnamed (图片) -->
+                  <div id="u348" class="ax_default _图片">
+                    <img id="u348_img" class="img " src="images/枪球巡检-蓝脑找图/u348.jpg"/>
+                  </div>
+                </div>
+              </div>
+              <div id="u346_state2" class="panel_state" data-label="State3" style="visibility: hidden;">
+                <div id="u346_state2_content" class="panel_state_content">
+
+                  <!-- 下一次变化 (图片) -->
+                  <div id="u349" class="ax_default _图片" data-label="下一次变化">
+                    <img id="u349_img" class="img " src="images/枪球巡检-蓝脑找图/下一次变化_u349.jpg"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 上一张 (形状) -->
+            <div id="u350" class="ax_default icon ax_default_hidden" data-label="上一张" style="display:none; visibility: hidden">
+              <img id="u350_img" class="img " src="images/任务处理/上一张_u128.png"/>
+            </div>
+
+            <!-- 下一张 (形状) -->
+            <div id="u351" class="ax_default icon ax_default_hidden" data-label="下一张" style="display:none; visibility: hidden">
+              <img id="u351_img" class="img " src="images/任务处理/下一张_u129.png"/>
+            </div>
+
+            <!-- Unnamed (矩形) -->
+            <div id="u352" class="ax_default box_1 ax_default_hidden" style="display:none; visibility: hidden">
+              <div id="u352_div" class=""></div>
+            </div>
+
+            <!-- Unnamed (表格) -->
+            <div id="u353" class="ax_default ax_default_hidden" style="display:none; visibility: hidden">
+
+              <!-- Unnamed (单元格) -->
+              <div id="u354" class="ax_default table_cell">
+                <img id="u354_img" class="img " src="images/枪球巡检-蓝脑找图/u354.png"/>
+              </div>
+
+              <!-- Unnamed (单元格) -->
+              <div id="u355" class="ax_default table_cell">
+                <img id="u355_img" class="img " src="images/枪球巡检-蓝脑找图/u354.png"/>
+              </div>
+
+              <!-- Unnamed (单元格) -->
+              <div id="u356" class="ax_default table_cell">
+                <img id="u356_img" class="img " src="images/枪球巡检-蓝脑找图/u356.png"/>
+              </div>
+
+              <!-- Unnamed (单元格) -->
+              <div id="u357" class="ax_default table_cell">
+                <img id="u357_img" class="img " src="images/枪球巡检-蓝脑找图/u357.png"/>
+              </div>
+
+              <!-- Unnamed (单元格) -->
+              <div id="u358" class="ax_default table_cell">
+                <img id="u358_img" class="img " src="images/枪球巡检-蓝脑找图/u357.png"/>
+              </div>
+
+              <!-- Unnamed (单元格) -->
+              <div id="u359" class="ax_default table_cell">
+                <img id="u359_img" class="img " src="images/枪球巡检-蓝脑找图/u359.png"/>
+              </div>
+
+              <!-- Unnamed (单元格) -->
+              <div id="u360" class="ax_default table_cell">
+                <img id="u360_img" class="img " src="images/枪球巡检-蓝脑找图/u360.png"/>
+              </div>
+
+              <!-- Unnamed (单元格) -->
+              <div id="u361" class="ax_default table_cell">
+                <img id="u361_img" class="img " src="images/枪球巡检-蓝脑找图/u360.png"/>
+              </div>
+
+              <!-- Unnamed (单元格) -->
+              <div id="u362" class="ax_default table_cell">
+                <img id="u362_img" class="img " src="images/枪球巡检-蓝脑找图/u362.png"/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u363" class="ax_default primary_button">
+        <div id="u363_div" class=""></div>
+        <div id="u363_text" class="text ">
+          <p><span>自研巡检</span></p>
+        </div>
+      </div>
+
+      <!-- 多辆车 (动态面板) -->
+      <div id="u364" class="ax_default ax_default_hidden" data-label="多辆车" style="display:none; visibility: hidden">
+        <div id="u364_state0" class="panel_state" data-label="State1" style="">
+          <div id="u364_state0_content" class="panel_state_content">
+
+            <!-- Unnamed (图片) -->
+            <div id="u365" class="ax_default _图片">
+              <img id="u365_img" class="img " src="images/枪球巡检-蓝脑找图/u365.png"/>
+            </div>
+
+            <!-- Unnamed (热区) -->
+            <div id="u366" class="ax_default">
+            </div>
+
+            <!-- Unnamed (热区) -->
+            <div id="u367" class="ax_default">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 车辆在场 (动态面板) -->
+      <div id="u368" class="ax_default ax_default_hidden" data-label="车辆在场" style="display:none; visibility: hidden">
+        <div id="u368_state0" class="panel_state" data-label="State1" style="">
+          <div id="u368_state0_content" class="panel_state_content">
+
+            <!-- Unnamed (矩形) -->
+            <div id="u369" class="ax_default box_2">
+              <div id="u369_div" class=""></div>
+            </div>
+
+            <!-- Unnamed (矩形) -->
+            <div id="u370" class="ax_default iconfont">
+              <img id="u370_img" class="img " src="images/任务处理/u112.png"/>
+              <div id="u370_text" class="text ">
+                <p><span></span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (矩形) -->
+            <div id="u371" class="ax_default label">
+              <div id="u371_div" class=""></div>
+              <div id="u371_text" class="text ">
+                <p><span>新增记录</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (矩形) -->
+            <div id="u372" class="ax_default box_2">
+              <div id="u372_div" class=""></div>
+            </div>
+
+            <!-- 车辆信息 (组合) -->
+            <div id="u373" class="ax_default" data-label="车辆信息" data-left="370" data-top="372" data-width="347" data-height="224">
+
+              <!-- Unnamed (矩形) -->
+              <div id="u374" class="ax_default primary_button">
+                <div id="u374_div" class=""></div>
+                <div id="u374_text" class="text ">
+                  <p><span>泊位号</span></p>
+                </div>
+              </div>
+
+              <!-- Unnamed (下拉列表框) -->
+              <div id="u375" class="ax_default droplist">
+                <select id="u375_input">
+                  <option selected value="100009">100009</option>
+                  <option value="100010">100010</option>
+                  <option value="100011">100011</option>
+                </select>
+              </div>
+
+              <!-- Unnamed (矩形) -->
+              <div id="u376" class="ax_default primary_button">
+                <div id="u376_div" class=""></div>
+                <div id="u376_text" class="text ">
+                  <p><span>车辆出场</span></p>
+                </div>
+              </div>
+
+              <!-- Unnamed (文本框) -->
+              <div id="u377" class="ax_default text_field">
+                <input id="u377_input" type="text" value="冀DYX577"/>
+              </div>
+
+              <!-- Unnamed (矩形) -->
+              <div id="u378" class="ax_default primary_button">
+                <div id="u378_div" class=""></div>
+                <div id="u378_text" class="text ">
+                  <p><span>车牌号</span></p>
+                </div>
+              </div>
+
+              <!-- Unnamed (图片) -->
+              <div id="u379" class="ax_default _图片">
+                <img id="u379_img" class="img " src="images/任务处理/u137.png"/>
+              </div>
+
+              <!-- Unnamed (矩形) -->
+              <div id="u380" class="ax_default primary_button">
+                <div id="u380_div" class=""></div>
+                <div id="u380_text" class="text ">
+                  <p><span>入场时间</span></p>
+                </div>
+              </div>
+
+              <!-- Unnamed (文本框) -->
+              <div id="u381" class="ax_default text_field">
+                <input id="u381_input" type="text" value="2018-04-06 15:25:55"/>
+              </div>
+
+              <!-- Unnamed (矩形) -->
+              <div id="u382" class="ax_default primary_button">
+                <div id="u382_div" class=""></div>
+                <div id="u382_text" class="text ">
+                  <p><span>更新</span></p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Unnamed (图片) -->
+            <div id="u383" class="ax_default _图片">
+              <img id="u383_img" class="img " src="images/枪球巡检-蓝脑找图/u338.png"/>
+            </div>
+
+            <!-- 回溯时间插件 (组合) -->
+            <div id="u384" class="ax_default" data-label="回溯时间插件" data-left="193" data-top="60" data-width="151" data-height="26">
+
+              <!-- Unnamed (文本框) -->
+              <div id="u385" class="ax_default text_field">
+                <input id="u385_input" type="text" value="2018-03-21 08:29:17"/>
+              </div>
+
+              <!-- Unnamed (图片) -->
+              <div id="u386" class="ax_default _图片">
+                <img id="u386_img" class="img " src="images/垂停自动化/u225.png"/>
+              </div>
+            </div>
+
+            <!-- Unnamed (图片) -->
+            <div id="u387" class="ax_default _图片">
+              <img id="u387_img" class="img " src="images/枪球巡检-蓝脑找图/u342.png"/>
+            </div>
+
+            <!-- Unnamed (图片) -->
+            <div id="u388" class="ax_default _图片">
+              <img id="u388_img" class="img " src="images/枪球巡检-蓝脑找图/u347.jpg"/>
+            </div>
+
+            <!-- Unnamed (图片) -->
+            <div id="u389" class="ax_default _图片">
+              <img id="u389_img" class="img " src="images/枪球巡检-蓝脑找图/u389.jpg"/>
+            </div>
+
+            <!-- 上一张 (形状) -->
+            <div id="u390" class="ax_default icon ax_default_hidden" data-label="上一张" style="display:none; visibility: hidden">
+              <img id="u390_img" class="img " src="images/任务处理/上一张_u128.png"/>
+            </div>
+
+            <!-- 下一张 (形状) -->
+            <div id="u391" class="ax_default icon ax_default_hidden" data-label="下一张" style="display:none; visibility: hidden">
+              <img id="u391_img" class="img " src="images/任务处理/下一张_u129.png"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
